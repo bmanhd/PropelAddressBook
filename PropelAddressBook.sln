@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropelAddressBook", "PropelAddressBook\PropelAddressBook.csproj", "{018B62E2-2D80-4C97-A4BD-839DB980AFD6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PropelAddressBook", "PropelAddressBook\PropelAddressBook.csproj", "{018B62E2-2D80-4C97-A4BD-839DB980AFD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Propel.Test", "Propel.Test\Propel.Test.csproj", "{FA04E367-D273-4C0B-BA51-9F1678BFAC5A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{018B62E2-2D80-4C97-A4BD-839DB980AFD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{018B62E2-2D80-4C97-A4BD-839DB980AFD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{018B62E2-2D80-4C97-A4BD-839DB980AFD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA04E367-D273-4C0B-BA51-9F1678BFAC5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA04E367-D273-4C0B-BA51-9F1678BFAC5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA04E367-D273-4C0B-BA51-9F1678BFAC5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA04E367-D273-4C0B-BA51-9F1678BFAC5A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

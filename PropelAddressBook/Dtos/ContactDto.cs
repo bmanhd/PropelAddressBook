@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace PropelAddressBook.Dtos
 {
-    public class ContactDTO
+    public class ContactDto
     {
         public int Id { get; set; }
         [StringLength(50)]
@@ -13,5 +13,6 @@ namespace PropelAddressBook.Dtos
         [StringLength(20)]
         public string PhoneNumber { get; set; } = string.Empty;
         public AddressDto? Address { get; set; }
+        public bool Active { get; set; }
     }
 }

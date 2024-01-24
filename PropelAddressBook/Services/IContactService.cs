@@ -4,6 +4,7 @@ namespace PropelAddressBook.Services
 {
     public interface IContactService
     {
-        ContactDTO GetContactById(int id);
+        ContactDto GetContactById(int id);
+        IEnumerable<ContactDto> GetContacts();
     }
 }

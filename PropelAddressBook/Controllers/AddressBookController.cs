@@ -20,5 +20,11 @@ namespace PropelAddressBook.Controllers
 
             return Ok(contact);
         }
+
+        [HttpGet]
+        public IActionResult GetContacts()
+        {
+            return Ok(_contactService.GetContacts());
+        }
     }
 }
