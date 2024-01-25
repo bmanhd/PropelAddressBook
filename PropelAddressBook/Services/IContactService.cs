@@ -6,5 +6,8 @@ namespace PropelAddressBook.Services
     {
         ContactDto GetContactById(int id);
         IEnumerable<ContactDto> GetContacts();
+        ContactDto CreateContact(ContactDto newContact);
+        ContactDto UpdateContact(ContactDto updateContact);
+        bool DeleteContact(int id);
     }
 }

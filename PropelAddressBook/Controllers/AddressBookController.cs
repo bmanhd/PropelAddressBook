@@ -26,5 +26,52 @@ namespace PropelAddressBook.Controllers
         {
             return Ok(_contactService.GetContacts());
         }
+
+        [HttpPost]
+        public IActionResult CreateContact([FromBody] ContactDto newContact)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest();
+            }
+
+            var contact = _contactService.CreateContact(newContact);
+
+            if (contact == null)
+            {
+                return BadRequest("Can not find this contact to create");
+            }
+
+            return Ok(contact);
+        }
+
+        [HttpPut]
+        public IActionResult UpdateContact([FromBody] ContactDto updateContact)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest();
+            }
+
+            var contact = _contactService.UpdateContact(updateContact);
+            if (contact == null)
+            {
+                return BadRequest("Can not find this contact to update");
+            }
+
+            return Ok(contact);
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult DeleteContact(int id)
+        {
+            var result = _contactService.DeleteContact(id);
+            if (result == false)
+            {
+                return BadRequest("Can not find this contact to delete");
+            }
+
+            return Ok("The contact has been deleted");
+        }
     }
 }
